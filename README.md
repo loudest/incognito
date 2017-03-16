@@ -1,6 +1,6 @@
-## Incognito Peer to Peer WebRTC encrypted video chat conferencing
+## Peer to Peer WebRTC encrypted video chat conferencing
 
-Encrypted WebRTC video conferencing app built on Javascript.  Uses peer-to-peer connections for A/V and a centeralized sockets.IO signaling server for command delegation.  Bypasses firewalls and is obfuscation routing network safe (TOR).
+Encrypted WebRTC video conferencing app built on Javascript.  Uses peer-to-peer connections for A/V and a centeralized sockets.IO signaling microservice server for command delegation.  Bypasses firewalls and is obfuscation routing network safe (TOR).
 
 ![Screenshot](screenshot.png)
 
