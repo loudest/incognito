@@ -8,9 +8,9 @@ Encrypted WebRTC video conferencing app built on Javascript.  Uses peer-to-peer 
 
 Our approach for satisfying this challenge for the AT&T Mobile App Hackathon​ in 2015 was to:
 
-- Utilize Javascript and web conferencing technologies with an encrypted network layer to enable secure communications.
-- Peer to peer video and audio conferencing utilizes Google's VP8 WebP compression and Opus Audio Codec.
-- Peer to peer communications of signaling (muting audio and disabling webcam) and chat uses JSON over communicated over HTTPS websockets
+- Utilize Javascript and P2P web conferencing with an encrypted network layer.
+- Video and audio conferencing utilizes Google's VP8 WebP compression and Opus Audio Codec.
+- Signaling (muting audio and disabling webcam) and chat uses JSON over communicated over HTTPS websockets
 
 ## Lead developer
 
