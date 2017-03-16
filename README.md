@@ -12,6 +12,10 @@ Our approach for satisfying this challenge was to:
 - Peer to peer video and audio conferencing utilizes Google's VP8 WebP compression and Opus Audio Codec.
 - Peer to peer communications of signaling (muting audio and disabling webcam) and chat uses JSON over communicated over HTTPS websockets
 
+## Lead developer
+
+- [@loudest](https://github.com/loudest)
+
 ## Technologies, APIs, and Datasets Utilized
 
 We made use of:
