@@ -26,8 +26,12 @@ We made use of:
 1) You first need to have node.JS installed
 2) Next run npm install to download the appropriate Javascript dependencies
 3) Run the server by: node server.js
-4) You will have a URL generated for example: http://localhost:50000/
+4) You will have a URL generated for example: https://localhost:50000/
 
-Go to http://localhost:50000 and you will have an instant P2P encrypted video conferencing app
+Go to https://localhost:50000 and you will have an instant P2P encrypted video conferencing app
+
+Your peers will connect via an unique room key generated from the url: https://localhost:50000/?4wuluugvjhhaudgtrzhcnxw29
+
+Once they join, you can have muti-party conferencing.  Currently up to 4 people are only supported.  Chat interface does not poll since no stateful logging is done client side.
 
 Our code is licensed under the [MIT License](LICENSE.md).
