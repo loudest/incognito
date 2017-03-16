@@ -21,6 +21,17 @@ Our approach for satisfying this challenge for the AT&T Mobile App Hackathon​ 
 We made use of:
 - [JavaScript] - WebRTC, Sockets.IO, JSON communication key encryption over AES
 
+## Microservice API explained
+- [Signaling Server] - sockets.io services listens to the following endpoints:
+1. /create - Join the conference room and assigns a room UUID 
+2. /message - P2P message routing and broadcast to all clients connected to the specific room UUID
+3. /connection - signal connection setting for a specific UUID
+4. /connection/shareScreen - notify the party leader that a request to share the screen is initated
+5. /connection/unshareScreen - notify the party leader that a request to unshare the screen is initated 
+6. /join - Party joins a room as specified from client after the GET param
+7. /disconnect - Disconnect the client from a room shut off all connections to the peer
+8. /leave - Leaves the conference room
+
 ## How to run
 
 1) You first need to have node.JS installed
