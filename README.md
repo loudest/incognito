@@ -6,7 +6,7 @@ Encrypted WebRTC video conferencing app built on Javascript.  Uses peer-to-peer 
 
 ## Challenge and Approach
 
-Our approach for satisfying this challenge was to:
+Our approach for satisfying this challenge for the AT&T Mobile App Hackathon​ in 2015 was to:
 
 - Utilize Javascript and web conferencing technologies with an encrypted network layer to enable secure communications.
 - Peer to peer video and audio conferencing utilizes Google's VP8 WebP compression and Opus Audio Codec.
