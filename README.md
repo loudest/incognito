@@ -21,8 +21,8 @@ Our approach for satisfying this challenge for the AT&T Mobile App Hackathon​ 
 We made use of:
 - [JavaScript] - WebRTC, Sockets.IO, JSON communication key encryption over AES
 
-## Microservice API explained
-- [Signaling Server] - sockets.io services listens to the following endpoints:
+## Microservice REST API explained
+sockets.io services listens to the following endpoints:
 1. /create - Join the conference room and assigns a room UUID 
 2. /message - P2P message routing and broadcast to all clients connected to the specific room UUID
 3. /connection - signal connection setting for a specific UUID
