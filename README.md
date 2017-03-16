@@ -19,7 +19,7 @@ Our approach for satisfying this challenge for the AT&T Mobile App Hackathon​ 
 ## Technologies, APIs, and Datasets Utilized
 
 We made use of:
-- [JavaScript] - WebRTC
+- [JavaScript] - WebRTC, Sockets.IO, JSON object encryption over AES
 
 ## How to run
 
