@@ -1,0 +1,346 @@
+.hidden {
+    display: none
+}
+#room-link a {
+    white-space: nowrap
+}
+#remote-canvas {
+    display: none;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%
+}
+div.warning {
+    background-color: #a80202;
+    color: #000;
+    font-weight: 400;
+    opacity: .9
+}
+#container {
+    height: 100%;
+    position: absolute
+}
+#info-div {
+    z-index: 3
+}
+#room-link {
+    margin: 0 0 29px 0
+}
+#status {
+    z-index: 4
+}
+#videos {
+    font-size: 0;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    transition: all 1s;
+    width: 100%
+}
+#videos.active {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+footer {
+    background-color: #000;
+    bottom: 0px;
+	height: 30px;
+    color: #fff;
+    position: absolute;
+    transition: opacity 1s;
+    width: calc(100% - 20px)
+}
+footer div {
+	margin-left: 10px;
+    font-size: 20px;
+    opacity: .8;
+}
+html {
+    height: 100%;
+    margin: 0;
+    width: 100%
+}
+label {
+    margin: 0 10px 0 0
+}
+
+#video-bottom {
+	position: absolute;
+	bottom: 0px;
+}
+
+#localVideo {
+	position: absolute;
+    height: 200px;
+    width: 200px;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+    object-fit: cover;
+    transition: opacity 1s;
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+	z-index: -100;
+}
+#localScreenContainer {
+}
+#videoContainer {
+    border: 1px solid gray;
+    bottom: 20px;
+    left: 20px;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 0;	
+}
+#videoContainer.active {
+    opacity: 1;
+    z-index: 2;
+}
+#remote-video {
+    height: 10px;
+    object-fit: cover;
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transition: opacity 1s;
+}
+#confirm-join-div {
+    z-index: 100;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+#room-title {
+	color: white;	
+}
+#confirm-join-div div {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+#recent-rooms-list {
+    list-style-type: none;
+    padding: 0 15px
+}
+button {
+    background-color: #4285f4;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: .8em;
+    margin: 0 5px 20px 5px;
+    width: 8em;
+    height: 2.75em;
+    padding: .5em .7em .5em .7em;
+    -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .5)
+}
+button:active {
+    background-color: #3367d6
+}
+button:hover {
+    background-color: #3b78e7
+}
+button:focus {
+    outline: none;
+    -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .5)
+}
+button[disabled] {
+    color: #4c4c4c;
+    color: rgba(255, 255, 255, .3);
+    background-color: #1e1e1e;
+    background-color: rgba(255, 255, 255, .12)
+}
+input[type="text"] {
+    border: none;
+    border-bottom: solid 1px #4c4c4f;
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+    padding: .4em 0;
+    margin-right: 20px;
+    width: 100%;
+    display: block
+}
+input[type="text"]:focus {
+    border-bottom: solid 2px #4285f4;
+    outline: none
+}
+input[type="text"].invalid {
+    border-bottom: solid 2px #f44336
+}
+label.error-label {
+    color: #f44336;
+    font-size: .85em;
+    font-weight: 200;
+    margin: 0
+}
+#room-id-input-div {
+    margin: 15px
+}
+#room-id-input-buttons {
+    margin: 15px
+}
+h1 {
+    font-weight: 300;
+    margin: 0 0 .8em 0;
+    padding: 0 0 .2em 0
+}
+div#room-selection {
+    margin: 3em auto 0 auto;
+    width: 25em;
+    padding: 1em 1.5em 1.3em 1.5em
+}
+p {
+    color: #eee;
+    font-weight: 300;
+    line-height: 1.6em
+}
+#icons {
+    bottom: 77px;
+    right: 6vw;
+    position: absolute
+}
+circle {
+    fill: #666;
+    fill-opacity: .6
+}
+svg.on circle {
+    fill-opacity: 0
+}
+path.on {
+    display: none
+}
+path.off {
+    display: block
+}
+svg.on path.on {
+    display: block
+}
+svg.on path.off {
+    display: none
+}
+svg {
+    box-shadow: 2px 2px 24px #444;
+    border-radius: 48px;
+    display: block;
+    margin: 0 0 3vh 0;
+    transform: translateX(calc(-6vw - 96px));
+    transition: all .1s;
+    transition-timing-function: ease-in-out
+}
+svg:hover {
+    box-shadow: 4px 4px 48px #666
+}
+#icons.active svg {
+    transform: translateX(0)
+}
+#mute-audio {
+    transition: 40ms
+}
+#mute-audio:hover,
+#mute-audio.on {
+    background: #ab47bc
+}
+#mute-audio:hover circle {
+    fill: #ab47bc
+}
+#mute-video {
+    transition: 120ms
+}
+#mute-video:hover,
+#mute-video.on {
+    background: #ff9f00
+}
+#mute-video:hover circle {
+    fill: #ff9f00
+}
+#switch-video {
+    transition: 200ms
+}
+#switch-video:hover {
+    background: #12a256
+}
+#switch-video:hover circle {
+    fill: #12a256
+}
+#fullscreen {
+    transition: 280ms
+}
+#fullscreen:hover,
+#fullscreen.on {
+    background: #407cf7
+}
+#fullscreen:hover circle {
+    fill: #407cf7
+}
+#hangup {
+    transition: 360ms
+}
+#hangup:hover {
+    background: #dd2c00
+}
+#hangup:hover circle {
+    fill: #dd2c00
+}
+#remotes {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.videoContainer {
+	-webkit-user-drag: element;
+}
+.videoContainer video {
+	width: 250px;
+	height: 250px;
+	border: 1px solid white;
+}
+.volume {
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	top: 5px;
+	height: 5px;
+	display: none;
+}
+.connectionstate {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	color: #fff
+}
+#draggable { 
+	border: none;
+}
+#messages_container {
+	position: absolute;
+	right: 300px;
+	bottom: 0px;
+	width: 200px;
+	height: 400px;
+	background-color: white;
+}
+#messages {
+	height: 200px;
+}
+# send_text_container {
+	height: 200px;
+}
+#text  {
+	background-color: gray;
+}
